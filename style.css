@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+head {
+    color: #B2D4BC;
+}
+body {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: "Oswald";
+    background-color: #97D5EE;
+   
+}
+.background{
+    background-image: url("img/background-picture-2.jpg");
+    background-repeat: no-repeat; /*dont  repeat image  */
+    background-size: cover; /* Stretch out image and cover whole page*/
+    background-position: 50% 20%; /*position image 50% from left -> right and 20% from bottom -> top*/
+   width: 100vw;
+   height: 100vh;
+}
+nav{
+    background-color: #b2d4bcda;
+    width: 100vw;
+    display: flex;
+    height: 66px;
+            
+}
+
+.logo{
+    height: 66px;
+    width: auto;
+}
+
+nav ul{
+    width:100;
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    height: 50px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 7px;
+    padding-left: 80px;
+    padding-right: 80px;
+}  
+nav li a {
+    text-decoration: none;
+    color:black;
+    font-size: 21px;
+    font-weight: bold;
+
+}  
+
+@media only screen and (max-width: 1000px)  {
+    nav li a {
+        text-decoration: none;
+        color:black;
+        font-size: 15px;
+        font-weight: bold;
+    }  
+    nav li{
+        height: 50px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 7px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }  
+}
