@@ -12,7 +12,7 @@ body {
    
 }
 .background{
-    background-image: url("img/background-picture-2.jpg");
+    background-image: url("img/background-again.png");
     background-repeat: no-repeat; /*dont  repeat image  */
     background-size: cover; /* Stretch out image and cover whole page*/
     background-position: 50% 20%; /*position image 50% from left -> right and 20% from bottom -> top*/
