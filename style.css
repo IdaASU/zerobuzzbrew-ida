@@ -11,6 +11,7 @@ body {
     background-color: #97D5EE;
    
 }
+
 .background{
     background-image: url("img/background-again.png");
     background-repeat: no-repeat; /*dont  repeat image  */
@@ -23,6 +24,8 @@ nav{
     background-color: #b2d4bcda;
     width: 100vw;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 66px;
             
 }
@@ -33,9 +36,12 @@ nav{
 }
 
 nav ul{
-    width:100;
-    list-style: none;
-    display: flex;
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+    width:inherit;
+    padding-right: 3%;
+    
 }
 
 nav li{
@@ -49,16 +55,37 @@ nav li{
 nav li a {
     text-decoration: none;
     color:black;
-    font-size: 21px;
+   font-size: 21px;
     font-weight: bold;
+    text-wrap: nowrap;
 
 }  
+/*This is "Om os"*/
+.beer {
+    position: relative;
+    float:right;
+    margin: 28px;
+    
+    
+}
+
+#about-us {
+    font-size: 50px;
+    padding-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+p {
+font-size: 32px;
+    padding-left: 90px;
+}
 
 @media only screen and (max-width: 1000px)  {
     nav li a {
         text-decoration: none;
         color:black;
-        font-size: 15px;
+        font-size: 65%;
         font-weight: bold;
     }  
     nav li{
