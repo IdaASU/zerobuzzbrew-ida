@@ -81,6 +81,91 @@ font-size: 32px;
     padding-left: 90px;
 }
 
+/*This is submit your idea*/
+header {
+font-size: 50px;
+color: black;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: yellow;
+text-align: center;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+p {
+text-align: center;
+font-size: 34px;
+}
+
+#navn {
+padding-left: 10rem;
+min-height: 80px;
+display: flex;
+}
+
+#email {
+padding-left: 10rem;
+min-height: 80px;
+align-self: flex-end;
+}
+
+#ide {
+padding-left: 10rem;
+min-height: 15rem;
+
+}
+
+#submit-button {
+padding-left: 10rem;
+min-height: 30px;
+
+}
+
+/*This is my livsnydere*/
+.livsnydere {
+    font-size: 55px;
+    text-align: center;
+    /*padding-left: 80px;*/
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+}
+
+p {
+    text-align: center;
+    font-size: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.column {
+    float: left;
+    width: 23%;
+    padding: 5px;
+    margin: 5rem; 
+  }
+
+  .row {
+    margin-top: 5rem;
+    text-align: center;
+    margin-left: 5rem;
+    padding-left: 30px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px)  {
     nav li a {
         text-decoration: none;
