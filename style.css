@@ -159,20 +159,20 @@ p {
 
 /*this is my "vores produkter"*/
 .original-bottle {
-text-align: left;
+float: left;
 padding-left: 50px;
 }
 
 #classic {
-    text-align: center;
-    padding-left: 90px;
-    font-size: 50px;
-   
+    float:left;
+    font-size: 55px;
+    padding-left: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
 }
 
-#orignal {
-    text-align: right;
-    font-size: 32px;
+#original {
+    font-size: 34px;
 }
 
 
