@@ -70,29 +70,31 @@ nav li a {
     position: absolute;
     top: 0;
     right: 0;
+    margin-top: 60px;
 }
 
-#about-us {
+.about-us {
+    color: yellow;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size: 55px;
     padding-left: 20rem;
     padding-top: 60px;
     padding-bottom: 50px;
 }
 
-p {
-    font-size: 32px;
-    padding-left: 20rem;
-    
+.about-us-text {
+    text-align: left;
+    font-size: 34px;
 }
+
 
 /*This is submit your idea*/
 header {
     font-size: 50px;
-    color: black;
+    color: yellow;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: black;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -101,6 +103,7 @@ header {
 p {
     text-align: center;
     font-size: 34px;
+    padding-bottom: 30px;
 }
 
 .idea {
@@ -114,6 +117,11 @@ p {
     padding-left: 10rem;
     min-height: 80px;
     display: flex;
+    
+}
+
+.your-name {
+    font-size: 30px;
 }
 
 #email {
@@ -122,10 +130,18 @@ p {
     align-self: flex-end;
 }
 
+.enter-email {
+    font-size: 30px;
+}
+
 #ide {
     padding-left: 10rem;
     min-height: 15rem;
 width: auto;
+}
+
+.din-ide {
+    font-size: 30px;
 }
 
 #submit-button {
@@ -136,11 +152,12 @@ min-height: 30px;
 
 /*This is my livsnydere*/
 .livsnydere {
+    color: yellow;
     font-size: 55px;
     text-align: center;
     /*padding-left: 80px;*/
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: black;
 }
 
 p {
@@ -185,7 +202,7 @@ p {
     padding: 20px;
 
 }
-/*ssørger for at tekst ligger under titel og til venstre*/
+/*sørger for at tekst ligger under titel og til venstre*/
 .grid-item-text{
 
  flex-direction: column;
@@ -271,10 +288,11 @@ p {
 }
 
 .classic {
+    color: yellow;
     font-size: 55px;
     padding-left: 40px;
     -webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: black;
 }
 
 .original {
