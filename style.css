@@ -12,14 +12,15 @@ body {
    
 }
 
-.background{
+.background {
     background-image: url("img/background-again.png");
     background-repeat: no-repeat; /*dont  repeat image  */
     background-size: cover; /* Stretch out image and cover whole page*/
     background-position: 50% 20%; /*position image 50% from left -> right and 20% from bottom -> top*/
-   width: 100vw;
-   height: 100vh;
+    width: 100vw;
+    height: 100vh;
 }
+
 nav{
     background-color: #b2d4bcda;
     width: 100vw;
@@ -39,8 +40,8 @@ nav ul{
    display: flex;
    list-style: none;
    justify-content: space-between;
-    width:inherit;
-    padding-right: 3%;
+   width:inherit;
+   padding-right: 3%;
     
 }
 
@@ -52,12 +53,13 @@ nav li{
     padding-left: 80px;
     padding-right: 80px;
 }  
+
 nav li a {
-    text-decoration: none;
-    color:black;
-   font-size: 21px;
-    font-weight: bold;
-    text-wrap: nowrap;
+     text-decoration: none;
+      color:black;
+      font-size: 26px;
+      font-weight: bold;
+      text-wrap: nowrap;
 
 }  
 /*This is "Om os"*/
@@ -65,54 +67,65 @@ nav li a {
     position: relative;
     float:right;
     margin: 28px;
-    
-    
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 #about-us {
-    font-size: 50px;
-    padding-left: 90px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    font-size: 55px;
+    padding-left: 20rem;
     padding-top: 60px;
     padding-bottom: 50px;
 }
 
 p {
-font-size: 32px;
-    padding-left: 90px;
+    font-size: 32px;
+    padding-left: 20rem;
+    
 }
 
 /*This is submit your idea*/
 header {
-font-size: 50px;
-color: black;
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: yellow;
-text-align: center;
-padding-left: 15px;
-padding-right: 15px;
+    font-size: 50px;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: yellow;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 p {
-text-align: center;
-font-size: 34px;
+    text-align: center;
+    font-size: 34px;
+}
+
+.idea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #navn {
-padding-left: 10rem;
-min-height: 80px;
-display: flex;
+    padding-left: 10rem;
+    min-height: 80px;
+    display: flex;
 }
 
 #email {
-padding-left: 10rem;
-min-height: 80px;
-align-self: flex-end;
+    padding-left: 10rem;
+    min-height: 80px;
+    align-self: flex-end;
 }
 
 #ide {
-padding-left: 10rem;
-min-height: 15rem;
-
+    padding-left: 10rem;
+    min-height: 15rem;
+width: auto;
 }
 
 #submit-button {
@@ -144,28 +157,118 @@ p {
     margin: 5rem; 
   }
 
-  .row {
+.row {
     margin-top: 5rem;
     text-align: center;
     margin-left: 5rem;
     padding-left: 30px;
   }
 
-  .row::after {
+.row::after {
     content: "";
     clear: both;
     display: table;
   }
 
 /*this is my "vores produkter"*/
-.original-bottle {
-float: left;
-padding-left: 50px;
+
+.grid-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 10px;
+
+    padding: 20px;
+
 }
+/*ssørger for at tekst ligger under titel og til venstre*/
+.grid-item-text{
+
+ flex-direction: column;
+
+  align-items: start;
+
+}
+/*sections */
+.grid-item {
+
+    display: flex;
+
+    justify-content: center;
+
+    height: auto;
+
+}
+
+
+
+.grid-item-1 {
+
+    grid-column-start: 1;
+
+    grid-column-end: 1;
+
+    grid-row-start: 1;
+
+    grid-row-end: 4;
+
+}
+
+
+
+.grid-item-2 {
+
+    grid-column-start: 2;
+
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+
+    grid-row-end: 1;
+
+}
+
+
+
+.grid-item-3 {
+
+    grid-column-start: 2;
+
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+
+    grid-row-end: 2;
+
+}
+
+
+
+.grid-item-4 {
+
+    grid-column-start: 3;
+
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+
+    grid-row-end: 5;
+
+}
+
+.original-bottle {
+    float: left;
+    padding-left: 50px;
+}
+
 .original-bottle-right {
     float: right;
     padding-right: 50px;
-    }
+}
 
 .classic {
     font-size: 55px;
@@ -180,36 +283,82 @@ padding-left: 50px;
     width: 33vw;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(1, 33%);
-  gap: 10px;
-}
-.one {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-.two {
-  grid-column: 2 / 4;
-  grid-row: 1;
-}
-.three {
-  grid-column: 2;
-  grid-row: 2;
-}
-.four {
-  grid-column: 3;
-  grid-row: 2 / 4;
-}
+/* Media Query for 1800px breakpoint */
 
+@media (max-width: 1800px) {
 
+    .grid-container {
 
+      grid-template-columns: 1fr; /* Single column layout */
+
+      grid-template-rows: min-content;   /* Rows will adjust height automatically */
+
+    }
+
+  
+
+    /* rearrange order and span*/
+
+    .grid-item-2 {
+
+      grid-column-start: 1; 
+
+      grid-column-end: 1; 
+
+      grid-row-start: 1;     
+
+      grid-row-end: 1;     
+
+    }
+
+    
+
+    .grid-item-1 {
+
+        grid-column-start: 1; 
+
+        grid-column-end: 1; 
+
+        grid-row-start: 2;     
+
+        grid-row-end: 2;  
+
+    }
+
+  
+
+    .grid-item-3 {
+
+        grid-column-start: 1; 
+
+        grid-column-end: 1; 
+
+        grid-row-start: 3;     
+
+        grid-row-end: 3;  
+
+    }
+
+  
+
+    .grid-item-4 {
+
+        grid-column-start: 1; 
+
+        grid-column-end: 1; 
+
+        grid-row-start: 4;     
+
+        grid-row-end: 4;  
+
+    }
+}
 /*this is my footer*/
 
 ul {
     display: inline-grid;
     grid-auto-flow: row;
-    grid-gap:24px;
+    grid-gap: 24px;
     justify-items: center;
     margin: auto;
 }
@@ -217,11 +366,11 @@ ul {
 a {
     color: white;
     text-decoration: none;
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0,4)
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0, 4)
 }
 
 a:hover {
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0,4)  
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0, 4)  
 }
 
 li:last-child {
@@ -229,17 +378,18 @@ li:last-child {
     grid-row: 1/2;
 }
 
-li:hover ~ li p {
+li:hover~li p {
     animation: wave-animation 0.3 infinite; 
 }
 
 @media only screen and (max-width: 1000px)  {
     nav li a {
         text-decoration: none;
-        color:black;
+        color: black;
         font-size: 65%;
         font-weight: bold;
     }  
+
     nav li{
         height: 50px;
         margin-left: 1rem;

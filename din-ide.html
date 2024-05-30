@@ -22,15 +22,22 @@
     <header class="submit">
     <h1>Vi laver øl til jer, så indsend dine idéer og den næste øl bliver måske din smag.</h1>
     </header>
-    <p>Hvis din smag bliver udvalgt, kommer du til at få muligheden for at besøge vores bryggeri og tage den først bryggede øl med hjem.</p>
-    <div class="idea">
+    <p>Hvis din smag bliver udvalgt, kommer du til at få muligheden for at besøge vores bryggeri og tage den første bryggede øl med hjem.</p>
+    <section class="idea">
         <form>
-            <input id="navn" type="text">
-            <input id="email" type="text">
-            <input id="ide" type="text">
-            <input id="submit-button" type="submit">
+            <section style="display: flex; flex-direction: row;">
+                <label>Navn</label>
+                <input id="navn" type="text">
+                <label>Email</label>
+                <input id="email" type="text">
+            </section>
+            <section style="display: flex; flex-direction: column;">
+<label> Din idé</label> 
+                <input id="ide" type="text">
+                <input id="submit-button" type="submit">
+            </section>
         </form>
-    </div>
+    </section>
 </body>
 </html>
 
