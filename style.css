@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+
 head {
     color: #B2D4BC;
 }
+
 body {
     margin-top: 0%;
     margin-bottom: 0%;
@@ -9,63 +11,68 @@ body {
     margin-right: 0%;
     font-family: "Oswald";
     background-color: #97D5EE;
-   
+
 }
 
 .background {
     background-image: url("img/background-picture-again-again.png");
-    background-repeat: no-repeat; /*dont  repeat image  */
-    background-size: cover; /* Stretch out image and cover whole page*/
-    background-position: 50% 20%; /*position image 50% from left -> right and 20% from bottom -> top*/
+    background-repeat: no-repeat;
+    /*dont  repeat image  */
+    background-size: cover;
+    /* Stretch out image and cover whole page*/
+    background-position: 50% 20%;
+    /*position image 50% from left -> right and 20% from bottom -> top*/
     width: 100vw;
     height: 100vh;
 }
 
-nav{
+/*Det her er min nav*/
+nav {
     background-color: #b2d4bcda;
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 66px;
-            
+
 }
 
-.logo{
+.logo {
     height: 66px;
     width: auto;
 }
 
-nav ul{
-   display: flex;
-   list-style: none;
-   justify-content: space-between;
-   width:inherit;
-   padding-right: 3%;
-    
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: inherit;
+    padding-right: 3%;
+
 }
 
-nav li{
+nav li {
     height: 50px;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-top: 7px;
     padding-left: 80px;
     padding-right: 80px;
-}  
+}
 
 nav li a {
-     text-decoration: none;
-      color:black;
-      font-size: 26px;
-      font-weight: bold;
-      text-wrap: nowrap;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    text-wrap: nowrap;
 
-}  
-/*This is "Om os"*/
+}
+
+/*Det her er "Om os"*/
 .beer {
     position: relative;
-    float:right;
+    float: right;
     margin: 28px;
     position: absolute;
     top: 0;
@@ -89,7 +96,7 @@ nav li a {
 }
 
 
-/*This is submit your idea*/
+/*Det her er "din idé"*/
 header {
     font-size: 50px;
     color: yellow;
@@ -117,7 +124,7 @@ p {
     padding-left: 10rem;
     min-height: 80px;
     display: flex;
-    
+
 }
 
 .your-name {
@@ -137,7 +144,7 @@ p {
 #ide {
     padding-left: 10rem;
     min-height: 15rem;
-width: auto;
+    width: auto;
 }
 
 .din-ide {
@@ -145,12 +152,12 @@ width: auto;
 }
 
 #submit-button {
-padding-left: 10rem;
-min-height: 30px;
+    padding-left: 10rem;
+    min-height: 30px;
 
 }
 
-/*This is my livsnydere*/
+/*Det her er livsnydere*/
 .livsnydere {
     color: yellow;
     font-size: 55px;
@@ -171,23 +178,23 @@ p {
     float: left;
     width: 23%;
     padding: 5px;
-    margin: 5rem; 
-  }
+    margin: 5rem;
+}
 
 .row {
     margin-top: 5rem;
     text-align: center;
     margin-left: 5rem;
     padding-left: 30px;
-  }
+}
 
 .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
-/*this is my "vores produkter"*/
+/*Det her er "vores produkter"*/
 
 .grid-container {
 
@@ -202,14 +209,16 @@ p {
     padding: 20px;
 
 }
+
 /*sørger for at tekst ligger under titel og til venstre*/
-.grid-item-text{
+.grid-item-text {
 
- flex-direction: column;
+    flex-direction: column;
 
-  align-items: start;
+    align-items: start;
 
 }
+
 /*sections */
 .grid-item {
 
@@ -307,76 +316,80 @@ p {
 
     .grid-container {
 
-      grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr;
+        /* Single column layout */
 
-      grid-template-rows: min-content;   /* Rows will adjust height automatically */
+        grid-template-rows: min-content;
+        /* Rows vil automatisk justere højde */
 
     }
 
-  
 
-    /* rearrange order and span*/
+
+    /* Ændre rækkefølge og span*/
 
     .grid-item-2 {
 
-      grid-column-start: 1; 
+        grid-column-start: 1;
 
-      grid-column-end: 1; 
+        grid-column-end: 1;
 
-      grid-row-start: 1;     
+        grid-row-start: 1;
 
-      grid-row-end: 1;     
+        grid-row-end: 1;
 
     }
 
-    
+
 
     .grid-item-1 {
 
-        grid-column-start: 1; 
+        grid-column-start: 1;
 
-        grid-column-end: 1; 
+        grid-column-end: 1;
 
-        grid-row-start: 2;     
+        grid-row-start: 2;
 
-        grid-row-end: 2;  
+        grid-row-end: 2;
 
     }
 
-  
+
 
     .grid-item-3 {
 
-        grid-column-start: 1; 
+        grid-column-start: 1;
 
-        grid-column-end: 1; 
+        grid-column-end: 1;
 
-        grid-row-start: 3;     
+        grid-row-start: 3;
 
-        grid-row-end: 3;  
+        grid-row-end: 3;
 
     }
 
-  
+
 
     .grid-item-4 {
 
-        grid-column-start: 1; 
+        grid-column-start: 1;
 
-        grid-column-end: 1; 
+        grid-column-end: 1;
 
-        grid-row-start: 4;     
+        grid-row-start: 4;
 
-        grid-row-end: 4;  
+        grid-row-end: 4;
 
     }
 }
+
 /*this is my footer*/
 
-footer{
+footer {
     width: 100vw;
     background-color: #B2D4BC;
 }
+
 footer ul {
     display: flex;
     font-size: 18px;
@@ -386,30 +399,39 @@ footer ul {
     margin: auto;
 }
 
-footer ul li{
-   list-style: none;
+footer ul li {
+    list-style: none;
 }
 
 footer ul li a {
     text-decoration: none;
 }
+
 a {
     color: black;
 }
-@media only screen and (max-width: 1000px)  {
+
+a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(129, 61%, 16%, 0.41)
+}
+
+;
+
+/*Media query*/
+@media only screen and (max-width: 1000px) {
     nav li a {
         text-decoration: none;
         color: black;
         font-size: 65%;
         font-weight: bold;
-    }  
+    }
 
-    nav li{
+    nav li {
         height: 50px;
         margin-left: 1rem;
         margin-right: 1rem;
         padding-top: 7px;
         padding-left: 0%;
         padding-right: 0%;
-    }  
+    }
 }
