@@ -13,7 +13,7 @@ body {
 }
 
 .background {
-    background-image: url("img/background-again.png");
+    background-image: url("img/background-picture-again-again.png");
     background-repeat: no-repeat; /*dont  repeat image  */
     background-size: cover; /* Stretch out image and cover whole page*/
     background-position: 50% 20%; /*position image 50% from left -> right and 20% from bottom -> top*/
@@ -373,33 +373,29 @@ p {
 }
 /*this is my footer*/
 
-ul {
-    display: inline-grid;
-    grid-auto-flow: row;
-    grid-gap: 24px;
+footer{
+    width: 100vw;
+    background-color: #B2D4BC;
+}
+footer ul {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-around;
+    width: 50%;
     justify-items: center;
     margin: auto;
 }
 
-a {
-    color: white;
+footer ul li{
+   list-style: none;
+}
+
+footer ul li a {
     text-decoration: none;
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0, 4)
 }
-
-a:hover {
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0, 4)  
+a {
+    color: black;
 }
-
-li:last-child {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-li:hover~li p {
-    animation: wave-animation 0.3 infinite; 
-}
-
 @media only screen and (max-width: 1000px)  {
     nav li a {
         text-decoration: none;
