@@ -22,14 +22,15 @@ body {
 
 }
 
+/*Det her er baggrundsbilledet på forsiden*/
 .background {
     background-image: url("img/background-picture-again-again.png");
+    /*Ikke gentag billede*/
     background-repeat: no-repeat;
-    /*dont  repeat image  */
+    /* Strækker billedet ud, så den dækker hele siden*/
     background-size: cover;
-    /* Stretch out image and cover whole page*/
+    /* Placere billedet 50% fra venstre*/
     background-position: 50% 20%;
-    /*position image 50% from left -> right and 20% from bottom -> top*/
     width: 100vw;
     height: 100vh;
 }
@@ -54,6 +55,7 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
 .logo {
     height: 66px;
     width: auto;
