@@ -141,6 +141,11 @@ p {
     flex-direction: row;
 }
 
+.idea-section {
+    display: flex; 
+    flex-direction: column;
+}
+
 /*her er css for navn feltet i formularen*/
 #navn {
     padding-left: 10rem;
@@ -193,6 +198,10 @@ p {
     font-size: 32px;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.skarpcheddar-øl {
+    width: 100%;
 }
 
 .column {
@@ -336,7 +345,7 @@ p {
 .burger {
     display: none;
 }
-/*bestemmer hvilken retning burger indholdet skal være i*/
+/*bestemmer hvilken retning burger skal være i*/
 .burger ul {
     flex-direction: column;
     background-color: #B2D4BC;
