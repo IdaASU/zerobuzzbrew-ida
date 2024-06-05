@@ -467,7 +467,7 @@ a:hover {
 }
 
 /*Media query*/
-@media only screen and (max-width: 3000px) {
+@media only screen and (max-width: 1300px) {
     nav li a {
         text-decoration: none;
         color: black;
