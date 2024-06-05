@@ -19,17 +19,16 @@ body {
     background-color: #97D5EE;
     display: flex;
     flex-direction: column;
-
 }
 
 /*Det her er baggrundsbilledet på forsiden*/
 .background {
-    background-image: url("img/background-picture-again-again.png");
+    background-image: url("img/background-picture-again-again.webp");
     /*Ikke gentag billede*/
     background-repeat: no-repeat;
     /* Strækker billedet ud, så den dækker hele siden*/
     background-size: cover;
-    /* Placere billedet 50% fra venstre*/
+    /* Placere billedet 50% fra venstre og 20% fra toppen*/
     background-position: 50% 20%;
     width: 100vw;
     height: 100vh;
@@ -43,18 +42,8 @@ nav {
     flex-direction: row;
     align-items: center;
     height: 66px;
-
 }
 
-.about-us-section{
-    display: flex;
-    flex-direction: row;
-}
-
-.about-us-section-section{
-    display: flex;
-    flex-direction: column;
-}
 
 .logo {
     height: 66px;
@@ -67,7 +56,6 @@ nav ul {
     justify-content: space-between;
     width: inherit;
     padding-right: 3%;
-
 }
 
 nav li {
@@ -85,7 +73,6 @@ nav li a {
     font-size: 26px;
     font-weight: bold;
     text-wrap: nowrap;
-
 }
 
 /*Det her er "Om os"*/
@@ -100,6 +87,7 @@ nav li a {
 }
 
 .about-us {
+    /*giver tekst stroke med farven sort*/
     color: yellow;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
@@ -114,6 +102,15 @@ nav li a {
     font-size: 34px;
 }
 
+.about-us-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-section-section{
+    display: flex;
+    flex-direction: column;
+}
 
 /*Det her er "din idé"*/
 header {
@@ -139,17 +136,22 @@ p {
     justify-content: space-around;
 }
 
+.idea-form{
+    display: flex;
+    flex-direction: row;
+}
+
+/*her er css for navn feltet i formularen*/
 #navn {
     padding-left: 10rem;
     min-height: 80px;
     display: flex;
-
 }
 
 .your-name {
     font-size: 30px;
 }
-
+/*her kan man skrive email ind i formularen*/
 #email {
     padding-left: 10rem;
     min-height: 80px;
@@ -160,6 +162,7 @@ p {
     font-size: 30px;
 }
 
+/*her kan man skrive sin idé ind i formularen*/
 #ide {
     padding-left: 10rem;
     min-height: 15rem;
@@ -169,19 +172,18 @@ p {
 .din-ide {
     font-size: 30px;
 }
-
+/*her trykker man for at sende idéen*/
 #submit-button {
     padding-left: 10rem;
     min-height: 30px;
 
 }
 
-/*Det her er livsnydere*/
+/*Det her er "livsnydere"*/
 .livsnydere {
     color: yellow;
     font-size: 55px;
     text-align: center;
-    /*padding-left: 80px;*/
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -195,114 +197,67 @@ p {
 
 .column {
     float: left;
-    width: 23%;
-    padding: 5px;
-    margin: 5rem;
+    width: 30%;
 }
 
+.column img{
+    width:100%;
+    height: auto;
+}
 .row {
-    margin-top: 5rem;
-    text-align: center;
-    margin-left: 5rem;
-    padding-left: 30px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 /*Det her er "vores produkter"*/
-
 .grid-container {
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     grid-template-rows: repeat(4, 1fr);
-
     gap: 10px;
-
     padding: 20px;
-
 }
 
 /*sørger for at tekst ligger under titel og til venstre*/
 .grid-item-text {
-
     flex-direction: column;
-
     align-items: start;
-
 }
 
-/*sections */
+/*sections for grid*/
 .grid-item {
-
     display: flex;
-
     justify-content: center;
-
     height: auto;
-
 }
-
-
 
 .grid-item-1 {
-
     grid-column-start: 1;
-
     grid-column-end: 1;
-
     grid-row-start: 1;
-
     grid-row-end: 4;
-
 }
-
-
 
 .grid-item-2 {
-
     grid-column-start: 2;
-
     grid-column-end: 4;
-
     grid-row-start: 1;
-
     grid-row-end: 1;
-
 }
-
-
 
 .grid-item-3 {
-
     grid-column-start: 2;
-
     grid-column-end: 2;
-
     grid-row-start: 2;
-
     grid-row-end: 2;
-
 }
 
-
-
 .grid-item-4 {
-
     grid-column-start: 3;
-
     grid-column-end: 3;
-
     grid-row-start: 2;
-
     grid-row-end: 5;
-
 }
 
 .original-bottle {
@@ -329,84 +284,59 @@ p {
     width: 33vw;
 }
 
-/* Media Query for 1800px breakpoint */
-
-@media (max-width: 1800px) {
-
+/*Media Query for 2000px breakpoint*/
+@media (max-width: 2000px) {
     .grid-container {
-
+        /*Single column layout*/
         grid-template-columns: 1fr;
-        /* Single column layout */
-
+        /*Rows vil automatisk justere højde*/
         grid-template-rows: min-content;
-        /* Rows vil automatisk justere højde */
-
     }
 
+    .grid-item{
+        display: flex;
+    }
+    .grid-item img{
+        height: auto;
+        width: 50%;
+    }
 
-
-    /* Ændre rækkefølge og span*/
-
+    /*ændre rækkefølge og span (hvor mange den strækker sig henover)*/
+   /*f.eks. start:1=den starter ved 1, end:1=den strækker sig til 1*/
     .grid-item-2 {
-
         grid-column-start: 1;
-
         grid-column-end: 1;
-
         grid-row-start: 1;
-
         grid-row-end: 1;
-
     }
-
-
 
     .grid-item-1 {
-
         grid-column-start: 1;
-
         grid-column-end: 1;
-
         grid-row-start: 2;
-
         grid-row-end: 2;
-
     }
-
-
 
     .grid-item-3 {
-
         grid-column-start: 1;
-
         grid-column-end: 1;
-
         grid-row-start: 3;
-
         grid-row-end: 3;
-
     }
 
-
-
     .grid-item-4 {
-
         grid-column-start: 1;
-
         grid-column-end: 1;
-
         grid-row-start: 4;
-
         grid-row-end: 4;
-
     }
 }
 
-/*Burger menu css start*/
+/*Burger menu ved media query på 1300px*/
 .burger {
     display: none;
 }
-
+/*bestemmer hvilken retning burger indholdet skal være i*/
 .burger ul {
     flex-direction: column;
     background-color: #B2D4BC;
@@ -433,14 +363,14 @@ p {
     display: block;
 }
 
-/*this is my footer*/
-
+/*det her er footer*/
 footer {
     width: 100vw;
     background-color: #B2D4BC;
     margin-top: auto;
 }
 
+/*opsætning af footeren med f.eks. hvor meget rum der skal være mellem items*/
 footer ul {
     display: flex;
     font-size: 18px;
@@ -448,6 +378,7 @@ footer ul {
     width: 50%;
     justify-items: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 footer ul li {
@@ -466,7 +397,7 @@ a:hover {
     box-shadow: inset 0 -1.2em 0 hsla(129, 61%, 16%, 0.41)
 }
 
-/*Media query*/
+/*Media query for 1300px*/
 @media only screen and (max-width: 1300px) {
     nav li a {
         text-decoration: none;
@@ -489,7 +420,49 @@ a:hover {
     }
 
     .burger {
+        /*important! overruler andre styles*/
         display: flex !important;
         justify-content: space-between;
+    }
+
+    .about-us-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-section-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us {
+        color: yellow;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        font-size: 55px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+        padding-left: 5rem;
+    }
+
+    .about-us-section img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .row{
+        display: flex;
+        /*sørger for at der er lige mængde rum i rows*/
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .column{
+        width:100%;
+    }
+
+    .idea-form{
+        display: flex;
+        flex-direction: column;
     }
 }

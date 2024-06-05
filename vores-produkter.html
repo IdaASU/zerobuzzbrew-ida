@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>ZeroBuzz Brew</title>
+    <title content="Zerobuzz brew, alkoholfri,øl">ZeroBuzz Brew</title>
 </head>
 <body>
     <style>
     </style>
-    <nav>
-        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.png" alt="logo" class="logo">
+    <nav class="normal">
+        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" alt="logo" class="logo">
         </a>
         <ul>
             <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -20,11 +20,11 @@
         </ul>
     </nav>
     <nav class="burger">
-        <a href="/">
-        <img scr="img/bi-i-png.png" alt="Logo med bi" class="logo"></a>
+        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
+        </a>
         <section class="burger-icon">
             <a onclick="openMenu()">
-                <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+                <img src="img/Hamburger_icon.svg.webp" alt="logo" class="logo">
             </a>
             <ul class="burger-content">
                 <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -35,32 +35,24 @@
             </ul>
         </section>
     </nav>
-    <script>
-        function openMenu() { var menu=document.querySelector(".burger-content");
-        if (menu.classList.contains("burger-content-active")=== true ) {
-            menu.classList.remove("burger-content-active") } else {
-                menu.classList.add("burger-content-active")
-            }
-        }
-    </script>
     <section class="grid-container">
         <section class="grid-item grid-item-1">
-            <img src="img/oel-med-label.png" alt="Original Zerobuzz Brew øl">
+            <img src="img/oel-med-label.webp" alt="Original Zerobuzz Brew øl">
 
         </section>
 
         <section class="grid-item grid-item-2 grid-item-text">
-            <h1 alt="Zerobuzz brew klassiske øl"class="classic">Den nye klassiker</h1>
+            <h1 content="klassisk,øl,tradionel,alkoholfri"alt="Zerobuzz brew klassiske øl"class="classic">Den nye klassiker</h1>
             <p>Smag den nye klassiker. Denne alkoholfri øl har den klassiske øl smag, så du har mulighed for nyde det
                 uden alkohol</p>
         </section>
         <section class="grid-item grid-item-3 grid-item-text">
-            <h1 alt="Zerobuzz brew øl med smagen af mjød"class="classic">En nordisk fornøjelse</h1>
+            <h1 content="mjød,alkoholfri,øl"alt="Zerobuzz brew øl med smagen af mjød"class="classic">En nordisk fornøjelse</h1>
             <p>Vi lavet vores eget tvist på den kendte nordiske mjød. Så tag på en rejse tilbage i tiden, og nyd den
                 søde smag af mjød.</p>
         </section>
         <section class="grid-item grid-item-4">
-            <img alt="Mjød Zerobuzz Brew"src="img/mjoed-png-flaske.png" style="align-self: baseline;"></img>
+            <img alt="Mjød Zerobuzz Brew"src="img/mjoed-png-flaske.webp" style="align-self: baseline;"></img>
 
         </section>
     </section>
@@ -75,5 +67,13 @@
           <li alt="Emoji af øl der skåler"><a>🍻</a></li>
         </ul>
       </footer>
+    <script>
+        function openMenu() { var menu=document.querySelector(".burger-content");
+        if (menu.classList.contains("burger-content-active")=== true ) {
+            menu.classList.remove("burger-content-active") } else {
+                menu.classList.add("burger-content-active")
+            }
+        }
+    </script>
     </body>
 </html>

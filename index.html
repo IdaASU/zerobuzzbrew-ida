@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title alt="Zerobuzz Brew">Zerobuzz Brew</title>
+    <title content="Zerobuzz brew, alkoholfri,øl"alt="Zerobuzz Brew">Zerobuzz Brew</title>
 </head>
 
 <body>
-    <div alt="Billede af en gruppe som nyder Zerbuzz Brew" class="background">
+    <section content="gruppe,øl,alkoholfri,hygge" alt="Billede af en gruppe som nyder Zerbuzz Brew" class="background">
 
         <nav class="normal">
-            <a alt="logo med bi" href="/"> <img src="img/bi-i-png.png" class="logo">
+            <a alt="logo med bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
             </a>
             <ul>
                 <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -22,11 +22,11 @@
             </ul>
         </nav>
         <nav class="burger">
-            <a alt="logo med bi" href="/"> <img src="img/bi-i-png.png" class="logo">
+            <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
             </a>
             <section class="burger-icon">
                 <a onclick="openMenu()">
-                    <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+                    <img src="img/Hamburger_icon.svg.webp" alt="logo" class="logo">
                 </a>
                 <ul class="burger-content">
                     <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -37,15 +37,7 @@
                 </ul>
             </section>
         </nav>
-        <script>
-            function openMenu() { var menu=document.querySelector(".burger-content");
-            if (menu.classList.contains("burger-content-active")=== true ) {
-                menu.classList.remove("burger-content-active") } else {
-                    menu.classList.add("burger-content-active")
-                }
-            }
-        </script>
-    </div>
+    </section>
     <footer alt="Direct to SoMe links">
         <ul>
             <li alt="Emoji af øl der skåler"><a>🍻</a></li>
@@ -57,6 +49,14 @@
             <li alt="Emoji af øl der skåler"><a>🍻</a></li>
         </ul>
     </footer>
+        <script>
+            function openMenu() { var menu=document.querySelector(".burger-content");
+            if (menu.classList.contains("burger-content-active")=== true ) {
+                menu.classList.remove("burger-content-active") } else {
+                    menu.classList.add("burger-content-active")
+                }
+            }
+        </script>
 </body>
 
 </html>

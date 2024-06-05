@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title alt="Zerobuzz Brew">Zerobuzz Brew</title>
+    <title content="Zerobuzz Brew,alkoholfri,øl,"alt="Zerobuzz Brew">Zerobuzz Brew</title>
 </head>
 
 <body>
     <style>
     </style>
     <nav class="normal">
-        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.png" class="logo">
+        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
         </a>
         <ul>
             <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -22,11 +22,11 @@
         </ul>
     </nav>
     <nav class="burger">
-        <a href="/">
-        <img scr="img/bi-i-png.png" alt="Logo med bi" class="logo"></a>
+        <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
+        </a>
         <section class="burger-icon">
             <a onclick="openMenu()">
-                <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+                <img src="img/Hamburger_icon.svg.webp" alt="logo" class="logo">
             </a>
             <ul class="burger-content">
                 <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -44,16 +44,26 @@
         vores bryggeri og tage den første bryggede øl med hjem.</p>
     <section class="idea">
         <form>
-            <section style="display: flex; flex-direction: row;">
+            <section class="idea-form">
+
                 <section alt="Indtast dit navn her" class="your-name"><label>Navn</label></section>
+
                 <input id="navn" type="text">
+
                 <section alt="Indtast din email her" class="enter-email"><label>Email</label></section>
+
                 <input id="email" type="text">
+
             </section>
+
             <section style="display: flex; flex-direction: column;">
+
                 <section alt="Skriv din idé her" class="din-ide"><label> Din idé</label></section>
+
                 <input id="ide" type="text">
+
                 <input alt="Tryk her for at sende" id="submit-button" type="submit">
+
             </section>
         </form>
     </section>

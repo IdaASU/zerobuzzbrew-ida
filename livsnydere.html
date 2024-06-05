@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
-  <title alt="Zerobuzz Brew">Zerobuzz Brew</title>
+  <title content="Zerobuzz Brew, alkoholfri,øl"alt="Zerobuzz Brew">Zerobuzz Brew</title>
 </head>
 
 <body>
   <style>
   </style>
-  <nav>
-    <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.png" class="logo">
+  <nav class="normal">
+    <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
     </a>
     <ul>
       <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -22,11 +22,11 @@
     </ul>
   </nav>
   <nav class="burger">
-    <a href="/">
-    <img scr="img/bi-i-png.png" alt="Logo med bi" class="logo"></a>
+    <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.webp" class="logo">
+    </a>
     <section class="burger-icon">
         <a onclick="openMenu()">
-            <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+            <img src="img/Hamburger_icon.svg.webp" alt="logo" class="logo">
         </a>
         <ul class="burger-content">
             <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
@@ -37,17 +37,9 @@
         </ul>
     </section>
 </nav>
-<script>
-    function openMenu() { var menu=document.querySelector(".burger-content");
-    if (menu.classList.contains("burger-content-active")=== true ) {
-        menu.classList.remove("burger-content-active") } else {
-            menu.classList.add("burger-content-active")
-        }
-    }
-</script>
-  <div class="content">
+<div class="content">
   </div>
-  <section alt="Livsnydere" class="livsnydere">
+  <section content="alkoholfri,øl,instagram"alt="Livsnydere" class="livsnydere">
     <h1>#Livsnydere</h1>
   </section>
   <p alt="Tag på instagram">Vi elsker når i tagger os i jeres opslag. Hvis i tagger os bliver i automatisk tilmeldt
@@ -55,15 +47,15 @@
     er jer som gør fælleskabet så fantastisk og er med til at opfordre os til at blive mere kreative.</p>
   <section class="row">
     <section class="column">
-      <img alt="Mænd nyder en flaske alkoholfri Zerobuzz Brew øl i munden " src="img/abdul-livsnydere-png.png"
-        style="width:100%">
+      <img alt="Mænd nyder en flaske alkoholfri Zerobuzz Brew øl i munden " src="img/abdul-livsnydere-png.webp"
+      style="width:100%">
     </section>
     <section class="column">
-      <img alt="En gruppe mennesker rundt om et bord nyder alkoholfri Zerobuzz Brew" src="img/ny-skarpcheddar.png"
-        style="width:100%">
+      <img alt="En gruppe mennesker rundt om et bord nyder alkoholfri Zerobuzz Brew" src="img/ny-skarpcheddar.webp"
+      style="width:100%">
     </section>
     <section class="column">
-      <img alt="Der bliver åbnet en flaske Zerobuzz Brew med grillpalet" src="img/oel-insta.png" style="width:100%">
+      <img alt="Der bliver åbnet en flaske Zerobuzz Brew med grillpalet" src="img/oel-insta.webp" style="width:100%">
     </section>
   </section>
   <footer alt="Direct to SoMe links">
@@ -77,6 +69,14 @@
       <li alt="Emoji af øl der skåler"><a>🍻</a></li>
     </ul>
   </footer>
+      <script>
+          function openMenu() { var menu=document.querySelector(".burger-content");
+          if (menu.classList.contains("burger-content-active")=== true ) {
+              menu.classList.remove("burger-content-active") } else {
+                  menu.classList.add("burger-content-active")
+              }
+          }
+      </script>
 </body>
 
 </html>
