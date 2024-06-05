@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+html {
+    height: 100vh;
+    display: flex;
+}
+
 head {
     color: #B2D4BC;
 }
 
 body {
+   height: 100vh;
     margin-top: 0%;
     margin-bottom: 0%;
     margin-left: 0%;
     margin-right: 0%;
     font-family: "Oswald";
     background-color: #97D5EE;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -37,6 +45,15 @@ nav {
 
 }
 
+.about-us-section{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-us-section-section{
+    display: flex;
+    flex-direction: column;
+}
 .logo {
     height: 66px;
     width: auto;
@@ -383,11 +400,43 @@ p {
     }
 }
 
+/*Burger menu css start*/
+.burger {
+    display: none;
+}
+
+.burger ul {
+    flex-direction: column;
+    background-color: #B2D4BC;
+    width: fit-content;
+    position: absolute;
+    padding: 5px;
+    right: 5px;
+    top: 50px;
+}
+
+.burger ul li {
+    width: 100%;
+}
+
+.burger-icon {
+    height: inherit;
+}
+
+.burger-content {
+    display: none;
+}
+
+.burger-content-active {
+    display: block;
+}
+
 /*this is my footer*/
 
 footer {
     width: 100vw;
     background-color: #B2D4BC;
+    margin-top: auto;
 }
 
 footer ul {
@@ -415,10 +464,8 @@ a:hover {
     box-shadow: inset 0 -1.2em 0 hsla(129, 61%, 16%, 0.41)
 }
 
-;
-
 /*Media query*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 3000px) {
     nav li a {
         text-decoration: none;
         color: black;
@@ -433,5 +480,14 @@ a:hover {
         padding-top: 7px;
         padding-left: 0%;
         padding-right: 0%;
+    }
+
+    .normal {
+        display: none;
+    }
+
+    .burger {
+        display: flex !important;
+        justify-content: space-between;
     }
 }

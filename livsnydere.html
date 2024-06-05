@@ -21,6 +21,30 @@
       <li alt="Din idé"><a href="/din-ide.html">Din idé</a></li>
     </ul>
   </nav>
+  <nav class="burger">
+    <a href="/">
+    <img scr="img/bi-i-png.png" alt="Logo med bi" class="logo"></a>
+    <section class="burger-icon">
+        <a onclick="openMenu()">
+            <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+        </a>
+        <ul class="burger-content">
+            <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
+                <li alt="Om os"><a href="/om-os.html">Om os</a></li>
+                <li alt="Livsnydere"><a href="/livsnydere.html">#Livsnydere</a></li>
+                <li alt="Din idé"><a href="/din-ide.html">Din idé</a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<script>
+    function openMenu() { var menu=document.querySelector(".burger-content");
+    if (menu.classList.contains("burger-content-active")=== true ) {
+        menu.classList.remove("burger-content-active") } else {
+            menu.classList.add("burger-content-active")
+        }
+    }
+</script>
   <div class="content">
   </div>
   <section alt="Livsnydere" class="livsnydere">

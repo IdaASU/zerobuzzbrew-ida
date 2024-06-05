@@ -11,7 +11,7 @@
 <body>
     <style>
     </style>
-    <nav>
+    <nav class="normal">
         <a alt="Logo med en bi" href="/"> <img src="img/bi-i-png.png" class="logo">
         </a>
         <ul>
@@ -20,6 +20,22 @@
             <li alt="Livsnydere"><a href="/livsnydere.html">#Livsnydere</a></li>
             <li alt="Din idé"><a href="/din-ide.html">Din idé</a></li>
         </ul>
+    </nav>
+    <nav class="burger">
+        <a href="/">
+        <img scr="img/bi-i-png.png" alt="Logo med bi" class="logo"></a>
+        <section class="burger-icon">
+            <a onclick="openMenu()">
+                <img src="img/Hamburger_icon.svg.png" alt="logo" class="logo">
+            </a>
+            <ul class="burger-content">
+                <li alt="Vores produkter"><a href="/vores-produkter.html">Vores produkter</a></li>
+                    <li alt="Om os"><a href="/om-os.html">Om os</a></li>
+                    <li alt="Livsnydere"><a href="/livsnydere.html">#Livsnydere</a></li>
+                    <li alt="Din idé"><a href="/din-ide.html">Din idé</a>
+                </li>
+            </ul>
+        </section>
     </nav>
     <header alt="Dit bud på den næste øl" class="submit">
         <h1>Vi laver øl til jer, så indsend dine idéer og den næste øl bliver måske din smag.</h1>
@@ -52,6 +68,14 @@
             <li alt="Emoji af øl der skåler"><a>🍻</a></li>
         </ul>
     </footer>
+    <script>
+        function openMenu() { var menu=document.querySelector(".burger-content");
+        if (menu.classList.contains("burger-content-active")=== true ) {
+            menu.classList.remove("burger-content-active") } else {
+                menu.classList.add("burger-content-active")
+            }
+        }
+    </script>
 </body>
 
 </html>
